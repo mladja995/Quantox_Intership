@@ -1,0 +1,24 @@
+Lista funkcija koju roboti izvrsavaju:
+
+loop:
+L
+R
+L
+S
+G loop
+loop1;
+L
+G loop1
+
+Objasnjenje:
+Posto se roboti nalaze na jednoj liniji i smer kretanja im je 
+samo u levo ili u desno, a pritom izvrsavaju istu listu instrukcija, 
+to znaci da se oba robota moraju kretati u istu stranu kako bi se nekada sudarili.
+U mom slucaju oba robota se krecu u levo, to znaci da ce jedino desni robot da dodje
+do mrlje koju je levi robot ostavio, levi robot nikad nece doci do mrlje.
+Obzirom da je tako oba robota ce izvrstavati prvu pelju: L R L S(ukoliko naidju na mrlju) i G, medjutim
+kada se desni robot nadje na mrlji koju je ostavio levi robot, desni robot
+ce izvrsiti instrukciju S, kojom preskace instrukicju G loop, kojom ulazi u novu
+pelju loop1 u kojoj se krece brze od levog robota jer izvrsava samo dve L i G instrukcije,
+dok levi robot izvrsava cetiri instrukcije L R L i G. Zato sto se desni robot sada
+brze krece, u nekom trenutku sticice levog robota i docice do sudara.
