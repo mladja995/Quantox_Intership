@@ -6,7 +6,7 @@ R
 L
 S
 G loop
-loop1;
+loop1:
 L
 G loop1
 
